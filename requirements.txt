@@ -1,0 +1,5 @@
+
+fastapi==0.68.0
+uvicorn==0.13.4
+CPython==3.9.4
+pydantic>=1.2.0,<2.0.0
