@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongoconn
+  labels:
+    app: mongoconn
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongoconn
+  template:
+    metadata:
+      labels:
+        app: mongoconn
+    spec:
+      containers:
+        - name: whoami
+          image: ranfangxu/mongoconn
+          ports:
+            - containerPort: 8000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongoconn
+
+spec:
+  ports:
+    - name: web
+      port: 8000
+      targetPort: 8000
+
+  selector:
+    app: mongoconn
