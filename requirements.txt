@@ -1,5 +1,4 @@
-
-fastapi==0.68.0
-uvicorn==0.13.4
-CPython==0。06
-pydantic>=1.2.0,<2.0.0
+fastapi==0.88.0
+uvicorn==0.20.0
+CPython==0.0.6
+pydantic==1.10.2
