@@ -1,4 +1,9 @@
 fastapi==0.88.0
 uvicorn==0.20.0
 CPython==0.0.6
-pydantic==1.10.2
+pydantic==1.10.4
+pymongo==4.3.3
+motor==3.1.1
+
+
+
