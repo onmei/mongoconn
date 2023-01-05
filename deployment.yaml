@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: mongoconn
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           image: ranfangxu/mongoconn
           ports:
             - containerPort: 8000
